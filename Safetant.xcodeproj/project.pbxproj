@@ -1,0 +1,1147 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDC3D0C426CA1C8A00C932AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D0C326CA1C8A00C932AF /* AppDelegate.swift */; };
+		EDC3D0C626CA1C8A00C932AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D0C526CA1C8A00C932AF /* SceneDelegate.swift */; };
+		EDC3D0C826CA1C8A00C932AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D0C726CA1C8A00C932AF /* ViewController.swift */; };
+		EDC3D0CB26CA1C8A00C932AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC3D0C926CA1C8A00C932AF /* Main.storyboard */; };
+		EDC3D0CD26CA1C8B00C932AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC3D0CC26CA1C8B00C932AF /* Assets.xcassets */; };
+		EDC3D0D026CA1C8B00C932AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC3D0CE26CA1C8B00C932AF /* LaunchScreen.storyboard */; };
+		EDC3D0DB26CA1C8B00C932AF /* SafetantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D0DA26CA1C8B00C932AF /* SafetantTests.swift */; };
+		EDC3D0E626CA1C8B00C932AF /* SafetantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D0E526CA1C8B00C932AF /* SafetantUITests.swift */; };
+		EDC3D0EB26CA1C8B00C932AF /* Safetant WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EDC3D0EA26CA1C8B00C932AF /* Safetant WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EDC3D0F126CA1C8B00C932AF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC3D0EF26CA1C8B00C932AF /* Interface.storyboard */; };
+		EDC3D0F326CA1C8C00C932AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC3D0F226CA1C8C00C932AF /* Assets.xcassets */; };
+		EDC3D0FA26CA1C8C00C932AF /* Safetant WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EDC3D0F926CA1C8C00C932AF /* Safetant WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EDC3D0FF26CA1C8C00C932AF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D0FE26CA1C8C00C932AF /* InterfaceController.swift */; };
+		EDC3D10126CA1C8C00C932AF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D10026CA1C8C00C932AF /* ExtensionDelegate.swift */; };
+		EDC3D10326CA1C8C00C932AF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D10226CA1C8C00C932AF /* NotificationController.swift */; };
+		EDC3D10526CA1C8C00C932AF /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D10426CA1C8C00C932AF /* ComplicationController.swift */; };
+		EDC3D10726CA1C8D00C932AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC3D10626CA1C8D00C932AF /* Assets.xcassets */; };
+		EDC3D11326CA1C8D00C932AF /* Safetant_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D11226CA1C8D00C932AF /* Safetant_WatchKit_AppTests.swift */; };
+		EDC3D11E26CA1C8D00C932AF /* Safetant_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D11D26CA1C8D00C932AF /* Safetant_WatchKit_AppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDC3D0D726CA1C8B00C932AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDC3D0B826CA1C8A00C932AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC3D0BF26CA1C8A00C932AF;
+			remoteInfo = Safetant;
+		};
+		EDC3D0E226CA1C8B00C932AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDC3D0B826CA1C8A00C932AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC3D0BF26CA1C8A00C932AF;
+			remoteInfo = Safetant;
+		};
+		EDC3D0EC26CA1C8B00C932AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDC3D0B826CA1C8A00C932AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC3D0E926CA1C8B00C932AF;
+			remoteInfo = "Safetant WatchKit App";
+		};
+		EDC3D0FB26CA1C8C00C932AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDC3D0B826CA1C8A00C932AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC3D0F826CA1C8C00C932AF;
+			remoteInfo = "Safetant WatchKit Extension";
+		};
+		EDC3D10F26CA1C8D00C932AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDC3D0B826CA1C8A00C932AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC3D0F826CA1C8C00C932AF;
+			remoteInfo = "Safetant WatchKit Extension";
+		};
+		EDC3D11A26CA1C8D00C932AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDC3D0B826CA1C8A00C932AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC3D0E926CA1C8B00C932AF;
+			remoteInfo = "Safetant WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EDC3D12526CA1C8D00C932AF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EDC3D0FA26CA1C8C00C932AF /* Safetant WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC3D12926CA1C8D00C932AF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EDC3D0EB26CA1C8B00C932AF /* Safetant WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EDC3D0C026CA1C8A00C932AF /* Safetant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Safetant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC3D0C326CA1C8A00C932AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDC3D0C526CA1C8A00C932AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EDC3D0C726CA1C8A00C932AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDC3D0CA26CA1C8A00C932AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDC3D0CC26CA1C8B00C932AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDC3D0CF26CA1C8B00C932AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDC3D0D126CA1C8B00C932AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC3D0D626CA1C8B00C932AF /* SafetantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafetantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC3D0DA26CA1C8B00C932AF /* SafetantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetantTests.swift; sourceTree = "<group>"; };
+		EDC3D0DC26CA1C8B00C932AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC3D0E126CA1C8B00C932AF /* SafetantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafetantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC3D0E526CA1C8B00C932AF /* SafetantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetantUITests.swift; sourceTree = "<group>"; };
+		EDC3D0E726CA1C8B00C932AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC3D0EA26CA1C8B00C932AF /* Safetant WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Safetant WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC3D0F026CA1C8B00C932AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EDC3D0F226CA1C8C00C932AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDC3D0F426CA1C8C00C932AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC3D0F926CA1C8C00C932AF /* Safetant WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Safetant WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC3D0FE26CA1C8C00C932AF /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		EDC3D10026CA1C8C00C932AF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EDC3D10226CA1C8C00C932AF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		EDC3D10426CA1C8C00C932AF /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		EDC3D10626CA1C8D00C932AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDC3D10826CA1C8D00C932AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC3D10926CA1C8D00C932AF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		EDC3D10E26CA1C8D00C932AF /* Safetant WatchKit AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Safetant WatchKit AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC3D11226CA1C8D00C932AF /* Safetant_WatchKit_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safetant_WatchKit_AppTests.swift; sourceTree = "<group>"; };
+		EDC3D11426CA1C8D00C932AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC3D11926CA1C8D00C932AF /* Safetant WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Safetant WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC3D11D26CA1C8D00C932AF /* Safetant_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safetant_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
+		EDC3D11F26CA1C8D00C932AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDC3D0BD26CA1C8A00C932AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC3D0D326CA1C8B00C932AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC3D0DE26CA1C8B00C932AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC3D0F626CA1C8C00C932AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC3D10B26CA1C8D00C932AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC3D11626CA1C8D00C932AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDC3D0B726CA1C8A00C932AF = {
+			isa = PBXGroup;
+			children = (
+				EDC3D0C226CA1C8A00C932AF /* Safetant */,
+				EDC3D0D926CA1C8B00C932AF /* SafetantTests */,
+				EDC3D0E426CA1C8B00C932AF /* SafetantUITests */,
+				EDC3D0EE26CA1C8B00C932AF /* Safetant WatchKit App */,
+				EDC3D0FD26CA1C8C00C932AF /* Safetant WatchKit Extension */,
+				EDC3D11126CA1C8D00C932AF /* Safetant WatchKit AppTests */,
+				EDC3D11C26CA1C8D00C932AF /* Safetant WatchKit AppUITests */,
+				EDC3D0C126CA1C8A00C932AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDC3D0C126CA1C8A00C932AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDC3D0C026CA1C8A00C932AF /* Safetant.app */,
+				EDC3D0D626CA1C8B00C932AF /* SafetantTests.xctest */,
+				EDC3D0E126CA1C8B00C932AF /* SafetantUITests.xctest */,
+				EDC3D0EA26CA1C8B00C932AF /* Safetant WatchKit App.app */,
+				EDC3D0F926CA1C8C00C932AF /* Safetant WatchKit Extension.appex */,
+				EDC3D10E26CA1C8D00C932AF /* Safetant WatchKit AppTests.xctest */,
+				EDC3D11926CA1C8D00C932AF /* Safetant WatchKit AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDC3D0C226CA1C8A00C932AF /* Safetant */ = {
+			isa = PBXGroup;
+			children = (
+				EDC3D0C326CA1C8A00C932AF /* AppDelegate.swift */,
+				EDC3D0C526CA1C8A00C932AF /* SceneDelegate.swift */,
+				EDC3D0C726CA1C8A00C932AF /* ViewController.swift */,
+				EDC3D0C926CA1C8A00C932AF /* Main.storyboard */,
+				EDC3D0CC26CA1C8B00C932AF /* Assets.xcassets */,
+				EDC3D0CE26CA1C8B00C932AF /* LaunchScreen.storyboard */,
+				EDC3D0D126CA1C8B00C932AF /* Info.plist */,
+			);
+			path = Safetant;
+			sourceTree = "<group>";
+		};
+		EDC3D0D926CA1C8B00C932AF /* SafetantTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDC3D0DA26CA1C8B00C932AF /* SafetantTests.swift */,
+				EDC3D0DC26CA1C8B00C932AF /* Info.plist */,
+			);
+			path = SafetantTests;
+			sourceTree = "<group>";
+		};
+		EDC3D0E426CA1C8B00C932AF /* SafetantUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDC3D0E526CA1C8B00C932AF /* SafetantUITests.swift */,
+				EDC3D0E726CA1C8B00C932AF /* Info.plist */,
+			);
+			path = SafetantUITests;
+			sourceTree = "<group>";
+		};
+		EDC3D0EE26CA1C8B00C932AF /* Safetant WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				EDC3D0EF26CA1C8B00C932AF /* Interface.storyboard */,
+				EDC3D0F226CA1C8C00C932AF /* Assets.xcassets */,
+				EDC3D0F426CA1C8C00C932AF /* Info.plist */,
+			);
+			path = "Safetant WatchKit App";
+			sourceTree = "<group>";
+		};
+		EDC3D0FD26CA1C8C00C932AF /* Safetant WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EDC3D0FE26CA1C8C00C932AF /* InterfaceController.swift */,
+				EDC3D10026CA1C8C00C932AF /* ExtensionDelegate.swift */,
+				EDC3D10226CA1C8C00C932AF /* NotificationController.swift */,
+				EDC3D10426CA1C8C00C932AF /* ComplicationController.swift */,
+				EDC3D10626CA1C8D00C932AF /* Assets.xcassets */,
+				EDC3D10826CA1C8D00C932AF /* Info.plist */,
+				EDC3D10926CA1C8D00C932AF /* PushNotificationPayload.apns */,
+			);
+			path = "Safetant WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		EDC3D11126CA1C8D00C932AF /* Safetant WatchKit AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDC3D11226CA1C8D00C932AF /* Safetant_WatchKit_AppTests.swift */,
+				EDC3D11426CA1C8D00C932AF /* Info.plist */,
+			);
+			path = "Safetant WatchKit AppTests";
+			sourceTree = "<group>";
+		};
+		EDC3D11C26CA1C8D00C932AF /* Safetant WatchKit AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDC3D11D26CA1C8D00C932AF /* Safetant_WatchKit_AppUITests.swift */,
+				EDC3D11F26CA1C8D00C932AF /* Info.plist */,
+			);
+			path = "Safetant WatchKit AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDC3D0BF26CA1C8A00C932AF /* Safetant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC3D12A26CA1C8D00C932AF /* Build configuration list for PBXNativeTarget "Safetant" */;
+			buildPhases = (
+				EDC3D0BC26CA1C8A00C932AF /* Sources */,
+				EDC3D0BD26CA1C8A00C932AF /* Frameworks */,
+				EDC3D0BE26CA1C8A00C932AF /* Resources */,
+				EDC3D12926CA1C8D00C932AF /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDC3D0ED26CA1C8B00C932AF /* PBXTargetDependency */,
+			);
+			name = Safetant;
+			productName = Safetant;
+			productReference = EDC3D0C026CA1C8A00C932AF /* Safetant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDC3D0D526CA1C8B00C932AF /* SafetantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC3D12D26CA1C8D00C932AF /* Build configuration list for PBXNativeTarget "SafetantTests" */;
+			buildPhases = (
+				EDC3D0D226CA1C8B00C932AF /* Sources */,
+				EDC3D0D326CA1C8B00C932AF /* Frameworks */,
+				EDC3D0D426CA1C8B00C932AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDC3D0D826CA1C8B00C932AF /* PBXTargetDependency */,
+			);
+			name = SafetantTests;
+			productName = SafetantTests;
+			productReference = EDC3D0D626CA1C8B00C932AF /* SafetantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDC3D0E026CA1C8B00C932AF /* SafetantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC3D13026CA1C8D00C932AF /* Build configuration list for PBXNativeTarget "SafetantUITests" */;
+			buildPhases = (
+				EDC3D0DD26CA1C8B00C932AF /* Sources */,
+				EDC3D0DE26CA1C8B00C932AF /* Frameworks */,
+				EDC3D0DF26CA1C8B00C932AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDC3D0E326CA1C8B00C932AF /* PBXTargetDependency */,
+			);
+			name = SafetantUITests;
+			productName = SafetantUITests;
+			productReference = EDC3D0E126CA1C8B00C932AF /* SafetantUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		EDC3D0E926CA1C8B00C932AF /* Safetant WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC3D12626CA1C8D00C932AF /* Build configuration list for PBXNativeTarget "Safetant WatchKit App" */;
+			buildPhases = (
+				EDC3D0E826CA1C8B00C932AF /* Resources */,
+				EDC3D12526CA1C8D00C932AF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDC3D0FC26CA1C8C00C932AF /* PBXTargetDependency */,
+			);
+			name = "Safetant WatchKit App";
+			productName = "Safetant WatchKit App";
+			productReference = EDC3D0EA26CA1C8B00C932AF /* Safetant WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EDC3D0F826CA1C8C00C932AF /* Safetant WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC3D12226CA1C8D00C932AF /* Build configuration list for PBXNativeTarget "Safetant WatchKit Extension" */;
+			buildPhases = (
+				EDC3D0F526CA1C8C00C932AF /* Sources */,
+				EDC3D0F626CA1C8C00C932AF /* Frameworks */,
+				EDC3D0F726CA1C8C00C932AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Safetant WatchKit Extension";
+			productName = "Safetant WatchKit Extension";
+			productReference = EDC3D0F926CA1C8C00C932AF /* Safetant WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		EDC3D10D26CA1C8D00C932AF /* Safetant WatchKit AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC3D13326CA1C8D00C932AF /* Build configuration list for PBXNativeTarget "Safetant WatchKit AppTests" */;
+			buildPhases = (
+				EDC3D10A26CA1C8D00C932AF /* Sources */,
+				EDC3D10B26CA1C8D00C932AF /* Frameworks */,
+				EDC3D10C26CA1C8D00C932AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDC3D11026CA1C8D00C932AF /* PBXTargetDependency */,
+			);
+			name = "Safetant WatchKit AppTests";
+			productName = "Safetant WatchKit AppTests";
+			productReference = EDC3D10E26CA1C8D00C932AF /* Safetant WatchKit AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDC3D11826CA1C8D00C932AF /* Safetant WatchKit AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC3D13626CA1C8D00C932AF /* Build configuration list for PBXNativeTarget "Safetant WatchKit AppUITests" */;
+			buildPhases = (
+				EDC3D11526CA1C8D00C932AF /* Sources */,
+				EDC3D11626CA1C8D00C932AF /* Frameworks */,
+				EDC3D11726CA1C8D00C932AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDC3D11B26CA1C8D00C932AF /* PBXTargetDependency */,
+			);
+			name = "Safetant WatchKit AppUITests";
+			productName = "Safetant WatchKit AppUITests";
+			productReference = EDC3D11926CA1C8D00C932AF /* Safetant WatchKit AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDC3D0B826CA1C8A00C932AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					EDC3D0BF26CA1C8A00C932AF = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					EDC3D0D526CA1C8B00C932AF = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = EDC3D0BF26CA1C8A00C932AF;
+					};
+					EDC3D0E026CA1C8B00C932AF = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = EDC3D0BF26CA1C8A00C932AF;
+					};
+					EDC3D0E926CA1C8B00C932AF = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					EDC3D0F826CA1C8C00C932AF = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					EDC3D10D26CA1C8D00C932AF = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = EDC3D0F826CA1C8C00C932AF;
+					};
+					EDC3D11826CA1C8D00C932AF = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = EDC3D0E926CA1C8B00C932AF;
+					};
+				};
+			};
+			buildConfigurationList = EDC3D0BB26CA1C8A00C932AF /* Build configuration list for PBXProject "Safetant" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDC3D0B726CA1C8A00C932AF;
+			productRefGroup = EDC3D0C126CA1C8A00C932AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDC3D0BF26CA1C8A00C932AF /* Safetant */,
+				EDC3D0D526CA1C8B00C932AF /* SafetantTests */,
+				EDC3D0E026CA1C8B00C932AF /* SafetantUITests */,
+				EDC3D0E926CA1C8B00C932AF /* Safetant WatchKit App */,
+				EDC3D0F826CA1C8C00C932AF /* Safetant WatchKit Extension */,
+				EDC3D10D26CA1C8D00C932AF /* Safetant WatchKit AppTests */,
+				EDC3D11826CA1C8D00C932AF /* Safetant WatchKit AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDC3D0BE26CA1C8A00C932AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC3D0D026CA1C8B00C932AF /* LaunchScreen.storyboard in Resources */,
+				EDC3D0CD26CA1C8B00C932AF /* Assets.xcassets in Resources */,
+				EDC3D0CB26CA1C8A00C932AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC3D0D426CA1C8B00C932AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC3D0DF26CA1C8B00C932AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC3D0E826CA1C8B00C932AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC3D0F326CA1C8C00C932AF /* Assets.xcassets in Resources */,
+				EDC3D0F126CA1C8B00C932AF /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC3D0F726CA1C8C00C932AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC3D10726CA1C8D00C932AF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC3D10C26CA1C8D00C932AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC3D11726CA1C8D00C932AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDC3D0BC26CA1C8A00C932AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC3D0C826CA1C8A00C932AF /* ViewController.swift in Sources */,
+				EDC3D0C426CA1C8A00C932AF /* AppDelegate.swift in Sources */,
+				EDC3D0C626CA1C8A00C932AF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC3D0D226CA1C8B00C932AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC3D0DB26CA1C8B00C932AF /* SafetantTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC3D0DD26CA1C8B00C932AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC3D0E626CA1C8B00C932AF /* SafetantUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC3D0F526CA1C8C00C932AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC3D10326CA1C8C00C932AF /* NotificationController.swift in Sources */,
+				EDC3D10526CA1C8C00C932AF /* ComplicationController.swift in Sources */,
+				EDC3D10126CA1C8C00C932AF /* ExtensionDelegate.swift in Sources */,
+				EDC3D0FF26CA1C8C00C932AF /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC3D10A26CA1C8D00C932AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC3D11326CA1C8D00C932AF /* Safetant_WatchKit_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC3D11526CA1C8D00C932AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC3D11E26CA1C8D00C932AF /* Safetant_WatchKit_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDC3D0D826CA1C8B00C932AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDC3D0BF26CA1C8A00C932AF /* Safetant */;
+			targetProxy = EDC3D0D726CA1C8B00C932AF /* PBXContainerItemProxy */;
+		};
+		EDC3D0E326CA1C8B00C932AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDC3D0BF26CA1C8A00C932AF /* Safetant */;
+			targetProxy = EDC3D0E226CA1C8B00C932AF /* PBXContainerItemProxy */;
+		};
+		EDC3D0ED26CA1C8B00C932AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDC3D0E926CA1C8B00C932AF /* Safetant WatchKit App */;
+			targetProxy = EDC3D0EC26CA1C8B00C932AF /* PBXContainerItemProxy */;
+		};
+		EDC3D0FC26CA1C8C00C932AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDC3D0F826CA1C8C00C932AF /* Safetant WatchKit Extension */;
+			targetProxy = EDC3D0FB26CA1C8C00C932AF /* PBXContainerItemProxy */;
+		};
+		EDC3D11026CA1C8D00C932AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDC3D0F826CA1C8C00C932AF /* Safetant WatchKit Extension */;
+			targetProxy = EDC3D10F26CA1C8D00C932AF /* PBXContainerItemProxy */;
+		};
+		EDC3D11B26CA1C8D00C932AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDC3D0E926CA1C8B00C932AF /* Safetant WatchKit App */;
+			targetProxy = EDC3D11A26CA1C8D00C932AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDC3D0C926CA1C8A00C932AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC3D0CA26CA1C8A00C932AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDC3D0CE26CA1C8B00C932AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC3D0CF26CA1C8B00C932AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EDC3D0EF26CA1C8B00C932AF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC3D0F026CA1C8B00C932AF /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDC3D12026CA1C8D00C932AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDC3D12126CA1C8D00C932AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EDC3D12326CA1C8D00C932AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DR6DV84J94;
+				INFOPLIST_FILE = "Safetant WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MeetUcup.Safetant.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		EDC3D12426CA1C8D00C932AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DR6DV84J94;
+				INFOPLIST_FILE = "Safetant WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MeetUcup.Safetant.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		EDC3D12726CA1C8D00C932AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DR6DV84J94;
+				IBSC_MODULE = Safetant_WatchKit_Extension;
+				INFOPLIST_FILE = "Safetant WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = MeetUcup.Safetant.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		EDC3D12826CA1C8D00C932AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DR6DV84J94;
+				IBSC_MODULE = Safetant_WatchKit_Extension;
+				INFOPLIST_FILE = "Safetant WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = MeetUcup.Safetant.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		EDC3D12B26CA1C8D00C932AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DR6DV84J94;
+				INFOPLIST_FILE = Safetant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MeetUcup.Safetant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDC3D12C26CA1C8D00C932AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DR6DV84J94;
+				INFOPLIST_FILE = Safetant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MeetUcup.Safetant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDC3D12E26CA1C8D00C932AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DR6DV84J94;
+				INFOPLIST_FILE = SafetantTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MeetUcup.SafetantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Safetant.app/Safetant";
+			};
+			name = Debug;
+		};
+		EDC3D12F26CA1C8D00C932AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DR6DV84J94;
+				INFOPLIST_FILE = SafetantTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MeetUcup.SafetantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Safetant.app/Safetant";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDC3D13126CA1C8D00C932AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DR6DV84J94;
+				INFOPLIST_FILE = SafetantUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MeetUcup.SafetantUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Safetant;
+			};
+			name = Debug;
+		};
+		EDC3D13226CA1C8D00C932AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DR6DV84J94;
+				INFOPLIST_FILE = SafetantUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MeetUcup.SafetantUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Safetant;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDC3D13426CA1C8D00C932AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DR6DV84J94;
+				INFOPLIST_FILE = "Safetant WatchKit AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MeetUcup.Safetant-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Safetant WatchKit Extension.appex/Safetant WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		EDC3D13526CA1C8D00C932AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DR6DV84J94;
+				INFOPLIST_FILE = "Safetant WatchKit AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MeetUcup.Safetant-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Safetant WatchKit Extension.appex/Safetant WatchKit Extension";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		EDC3D13726CA1C8D00C932AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DR6DV84J94;
+				INFOPLIST_FILE = "Safetant WatchKit AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MeetUcup.Safetant-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Safetant WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		EDC3D13826CA1C8D00C932AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DR6DV84J94;
+				INFOPLIST_FILE = "Safetant WatchKit AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MeetUcup.Safetant-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Safetant WatchKit App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDC3D0BB26CA1C8A00C932AF /* Build configuration list for PBXProject "Safetant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC3D12026CA1C8D00C932AF /* Debug */,
+				EDC3D12126CA1C8D00C932AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC3D12226CA1C8D00C932AF /* Build configuration list for PBXNativeTarget "Safetant WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC3D12326CA1C8D00C932AF /* Debug */,
+				EDC3D12426CA1C8D00C932AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC3D12626CA1C8D00C932AF /* Build configuration list for PBXNativeTarget "Safetant WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC3D12726CA1C8D00C932AF /* Debug */,
+				EDC3D12826CA1C8D00C932AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC3D12A26CA1C8D00C932AF /* Build configuration list for PBXNativeTarget "Safetant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC3D12B26CA1C8D00C932AF /* Debug */,
+				EDC3D12C26CA1C8D00C932AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC3D12D26CA1C8D00C932AF /* Build configuration list for PBXNativeTarget "SafetantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC3D12E26CA1C8D00C932AF /* Debug */,
+				EDC3D12F26CA1C8D00C932AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC3D13026CA1C8D00C932AF /* Build configuration list for PBXNativeTarget "SafetantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC3D13126CA1C8D00C932AF /* Debug */,
+				EDC3D13226CA1C8D00C932AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC3D13326CA1C8D00C932AF /* Build configuration list for PBXNativeTarget "Safetant WatchKit AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC3D13426CA1C8D00C932AF /* Debug */,
+				EDC3D13526CA1C8D00C932AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC3D13626CA1C8D00C932AF /* Build configuration list for PBXNativeTarget "Safetant WatchKit AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC3D13726CA1C8D00C932AF /* Debug */,
+				EDC3D13826CA1C8D00C932AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDC3D0B826CA1C8A00C932AF /* Project object */;
+}
