@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED2FF47126CDF0F1005C8D07 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2FF47026CDF0F1005C8D07 /* LoginViewModel.swift */; };
+		ED2FF47426CDF94C005C8D07 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2FF47326CDF94C005C8D07 /* NetworkMonitor.swift */; };
+		ED2FF47626CDF95C005C8D07 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2FF47526CDF95C005C8D07 /* NetworkService.swift */; };
 		EDC3D0C426CA1C8A00C932AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D0C326CA1C8A00C932AF /* AppDelegate.swift */; };
 		EDC3D0C626CA1C8A00C932AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D0C526CA1C8A00C932AF /* SceneDelegate.swift */; };
 		EDC3D0C826CA1C8A00C932AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D0C726CA1C8A00C932AF /* ViewController.swift */; };
-		EDC3D0CB26CA1C8A00C932AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC3D0C926CA1C8A00C932AF /* Main.storyboard */; };
 		EDC3D0CD26CA1C8B00C932AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC3D0CC26CA1C8B00C932AF /* Assets.xcassets */; };
 		EDC3D0D026CA1C8B00C932AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC3D0CE26CA1C8B00C932AF /* LaunchScreen.storyboard */; };
 		EDC3D0DB26CA1C8B00C932AF /* SafetantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D0DA26CA1C8B00C932AF /* SafetantTests.swift */; };
@@ -26,6 +28,11 @@
 		EDC3D10726CA1C8D00C932AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC3D10626CA1C8D00C932AF /* Assets.xcassets */; };
 		EDC3D11326CA1C8D00C932AF /* Safetant_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D11226CA1C8D00C932AF /* Safetant_WatchKit_AppTests.swift */; };
 		EDC3D11E26CA1C8D00C932AF /* Safetant_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D11D26CA1C8D00C932AF /* Safetant_WatchKit_AppUITests.swift */; };
+		EDC92B8726CCC267008DD2BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC92B8626CCC267008DD2BA /* HomeViewController.swift */; };
+		EDC92B8926CCC275008DD2BA /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC92B8826CCC275008DD2BA /* AccountViewController.swift */; };
+		EDC92B8B26CCC28A008DD2BA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC92B8A26CCC28A008DD2BA /* HomeViewModel.swift */; };
+		EDC92B8D26CCC29A008DD2BA /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC92B8C26CCC29A008DD2BA /* AccountViewModel.swift */; };
+		EDC92B8F26CCC2BB008DD2BA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC92B8E26CCC2BB008DD2BA /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,11 +106,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		ED2FF47026CDF0F1005C8D07 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		ED2FF47326CDF94C005C8D07 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		ED2FF47526CDF95C005C8D07 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		EDC3D0C026CA1C8A00C932AF /* Safetant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Safetant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC3D0C326CA1C8A00C932AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDC3D0C526CA1C8A00C932AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EDC3D0C726CA1C8A00C932AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EDC3D0CA26CA1C8A00C932AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDC3D0CC26CA1C8B00C932AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDC3D0CF26CA1C8B00C932AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDC3D0D126CA1C8B00C932AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -131,6 +140,11 @@
 		EDC3D11926CA1C8D00C932AF /* Safetant WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Safetant WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC3D11D26CA1C8D00C932AF /* Safetant_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safetant_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
 		EDC3D11F26CA1C8D00C932AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC92B8626CCC267008DD2BA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EDC92B8826CCC275008DD2BA /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		EDC92B8A26CCC28A008DD2BA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EDC92B8C26CCC29A008DD2BA /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		EDC92B8E26CCC2BB008DD2BA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +193,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED2FF47226CDF938005C8D07 /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				ED2FF47326CDF94C005C8D07 /* NetworkMonitor.swift */,
+				ED2FF47526CDF95C005C8D07 /* NetworkService.swift */,
+			);
+			path = Networks;
+			sourceTree = "<group>";
+		};
 		EDC3D0B726CA1C8A00C932AF = {
 			isa = PBXGroup;
 			children = (
@@ -210,10 +233,11 @@
 		EDC3D0C226CA1C8A00C932AF /* Safetant */ = {
 			isa = PBXGroup;
 			children = (
-				EDC3D0C326CA1C8A00C932AF /* AppDelegate.swift */,
-				EDC3D0C526CA1C8A00C932AF /* SceneDelegate.swift */,
+				ED2FF47226CDF938005C8D07 /* Networks */,
+				EDC92B8526CCC244008DD2BA /* Base */,
+				EDC92B8426CCC22F008DD2BA /* ViewModels */,
+				EDC92B8226CCC206008DD2BA /* ViewControllers */,
 				EDC3D0C726CA1C8A00C932AF /* ViewController.swift */,
-				EDC3D0C926CA1C8A00C932AF /* Main.storyboard */,
 				EDC3D0CC26CA1C8B00C932AF /* Assets.xcassets */,
 				EDC3D0CE26CA1C8B00C932AF /* LaunchScreen.storyboard */,
 				EDC3D0D126CA1C8B00C932AF /* Info.plist */,
@@ -279,6 +303,35 @@
 				EDC3D11F26CA1C8D00C932AF /* Info.plist */,
 			);
 			path = "Safetant WatchKit AppUITests";
+			sourceTree = "<group>";
+		};
+		EDC92B8226CCC206008DD2BA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDC92B8626CCC267008DD2BA /* HomeViewController.swift */,
+				EDC92B8826CCC275008DD2BA /* AccountViewController.swift */,
+				EDC92B8E26CCC2BB008DD2BA /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EDC92B8426CCC22F008DD2BA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EDC92B8A26CCC28A008DD2BA /* HomeViewModel.swift */,
+				EDC92B8C26CCC29A008DD2BA /* AccountViewModel.swift */,
+				ED2FF47026CDF0F1005C8D07 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EDC92B8526CCC244008DD2BA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EDC3D0C326CA1C8A00C932AF /* AppDelegate.swift */,
+				EDC3D0C526CA1C8A00C932AF /* SceneDelegate.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,7 +529,6 @@
 			files = (
 				EDC3D0D026CA1C8B00C932AF /* LaunchScreen.storyboard in Resources */,
 				EDC3D0CD26CA1C8B00C932AF /* Assets.xcassets in Resources */,
-				EDC3D0CB26CA1C8A00C932AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,9 +584,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2FF47626CDF95C005C8D07 /* NetworkService.swift in Sources */,
 				EDC3D0C826CA1C8A00C932AF /* ViewController.swift in Sources */,
+				EDC92B8D26CCC29A008DD2BA /* AccountViewModel.swift in Sources */,
+				EDC92B8B26CCC28A008DD2BA /* HomeViewModel.swift in Sources */,
+				EDC92B8926CCC275008DD2BA /* AccountViewController.swift in Sources */,
+				EDC92B8F26CCC2BB008DD2BA /* LoginViewController.swift in Sources */,
 				EDC3D0C426CA1C8A00C932AF /* AppDelegate.swift in Sources */,
 				EDC3D0C626CA1C8A00C932AF /* SceneDelegate.swift in Sources */,
+				ED2FF47426CDF94C005C8D07 /* NetworkMonitor.swift in Sources */,
+				EDC92B8726CCC267008DD2BA /* HomeViewController.swift in Sources */,
+				ED2FF47126CDF0F1005C8D07 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,14 +677,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EDC3D0C926CA1C8A00C932AF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EDC3D0CA26CA1C8A00C932AF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EDC3D0CE26CA1C8B00C932AF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
