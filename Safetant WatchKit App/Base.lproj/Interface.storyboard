@@ -1,16 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4HA-9U-h6H">
+    <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
+        <scene sceneID="DQv-ub-I72">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="4HA-9U-h6H">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="b1B-ej-aP1">
+                            <items>
+                                <button alignment="left" id="Xex-bc-zau">
+                                    <group key="contentGroup" width="1" height="115" alignment="left" layout="vertical" id="zAT-G9-oUw">
+                                        <items>
+                                            <imageView width="110" height="81" alignment="center" image="bolt.car" catalog="system" id="OZM-Dm-Uc4">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                            <label alignment="center" verticalAlignment="bottom" text="Start Driving" textAlignment="center" id="2iL-wd-4w7"/>
+                                        </items>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
+                                    </group>
+                                    <connections>
+                                        <segue destination="z0D-30-j8F" kind="push" id="9Jb-aT-7dk"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Emergency" id="jJu-Du-ytv">
+                            <color key="titleColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </button>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="-207" y="-86"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="wFT-n9-e84">
+            <objects>
+                <controller id="z0D-30-j8F">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="J9B-CQ-nGZ">
+                            <items>
+                                <imageView width="110" height="82" alignment="center" image="car" catalog="system" id="xWF-Ya-gbQ">
+                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </imageView>
+                                <group width="1" alignment="center" id="2zP-Gc-AUL">
+                                    <items>
+                                        <imageView alignment="center" image="heart.fill" catalog="system" id="S46-db-1Bs">
+                                            <color key="tintColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </imageView>
+                                        <label alignment="center" text="75 Bpm" textAlignment="center" id="jBT-FK-hhu"/>
+                                    </items>
+                                </group>
+                                <button width="1" alignment="left" title="Exit Driving Mode" id="zrX-EV-9n6">
+                                    <connections>
+                                        <segue destination="Eqg-WH-JSm" kind="push" id="bB2-So-AMO"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="5" bottom="5"/>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="134" y="-89"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="moW-Wp-aOL">
+            <objects>
+                <controller id="Eqg-WH-JSm">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="kIS-zB-75v">
+                            <items>
+                                <imageView width="124" height="78" alignment="center" image="eye" catalog="system" id="g9B-6X-LbF">
+                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </imageView>
+                                <label alignment="center" text="Wake up!" textAlignment="center" id="19G-Nc-IOO">
+                                    <color key="textColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                                <button width="1" alignment="left" title="Dismiss" id="aGC-Kg-Gz2"/>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="5" bottom="5"/>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="478" y="-88"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -27,21 +108,30 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="165" y="497"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Safetant_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="468" y="641"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Safetant_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="345"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bolt.car" catalog="system" width="128" height="94"/>
+        <image name="car" catalog="system" width="128" height="94"/>
+        <image name="eye" catalog="system" width="128" height="80"/>
+        <image name="heart.fill" catalog="system" width="128" height="105"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
