@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>heart rate detection</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>heart rate detection</string>
+	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
+	<string>heart rate detetction</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
