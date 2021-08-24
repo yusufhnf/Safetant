@@ -50,7 +50,7 @@
                                 <imageView width="110" height="82" alignment="center" image="car" catalog="system" id="xWF-Ya-gbQ">
                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </imageView>
-                                <group width="1" alignment="center" id="2zP-Gc-AUL">
+                                <group width="1" height="20" alignment="center" id="2zP-Gc-AUL">
                                     <items>
                                         <imageView alignment="center" image="heart.fill" catalog="system" id="S46-db-1Bs">
                                             <color key="tintColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -60,7 +60,7 @@
                                 </group>
                                 <button width="1" alignment="left" title="Exit Driving Mode" id="zrX-EV-9n6">
                                     <connections>
-                                        <segue destination="Eqg-WH-JSm" kind="push" id="bB2-So-AMO"/>
+                                        <action selector="actionPressed" destination="z0D-30-j8F" id="cid-y0-z8D"/>
                                     </connections>
                                 </button>
                             </items>
@@ -68,11 +68,14 @@
                         </group>
                     </items>
                     <connections>
+                        <outlet property="actionButton" destination="zrX-EV-9n6" id="huz-lc-vUe"/>
+                        <outlet property="drivingIcon" destination="xWF-Ya-gbQ" id="4lG-RM-HOO"/>
+                        <outlet property="heartRateIcon" destination="S46-db-1Bs" id="bcu-75-OZT"/>
                         <outlet property="heartRateLabel" destination="jBT-FK-hhu" id="OVg-r4-SJ1"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="134" y="-89"/>
+            <point key="canvasLocation" x="134" y="-88.5"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="moW-Wp-aOL">
