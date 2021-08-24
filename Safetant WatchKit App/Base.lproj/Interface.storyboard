@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4HA-9U-h6H">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4HA-9U-h6H">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
     </dependencies>
     <scenes>
@@ -94,7 +94,33 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="478" y="-88"/>
+            <point key="canvasLocation" x="455" y="-89"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="iEy-FG-GWd">
+            <objects>
+                <controller id="gYd-GQ-JwW">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="V3x-9y-w9Q">
+                            <items>
+                                <label alignment="center" text="Fall Detected!" id="hvH-HL-iQi"/>
+                            </items>
+                        </group>
+                        <button alignment="center" verticalAlignment="center" id="f2B-Sh-4k3">
+                            <group key="contentGroup" width="115" height="115" alignment="left" layout="vertical" id="4Cl-yP-spm">
+                                <items>
+                                    <imageView width="100" height="87" alignment="center" image="exclamationmark.triangle" catalog="system" id="Hcx-IP-MqW">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <label alignment="center" text="Emergency" id="CNW-8B-1r6"/>
+                                </items>
+                                <color key="backgroundColor" name="AccentColor"/>
+                            </group>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="764" y="-92"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -111,19 +137,51 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="165" y="497"/>
+            <point key="canvasLocation" x="166" y="594"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Safetant_WatchKit_App" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Safetant_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Title" numberOfLines="0" id="eon-zg-1ll">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" text="Time" id="l0g-gr-edG">
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <label alignment="left" text="Location" numberOfLines="0" id="EsG-Mm-GcK"/>
+                    </items>
+                    <connections>
+                        <outlet property="locationLabel" destination="EsG-Mm-GcK" id="CcR-w2-lO6"/>
+                        <outlet property="timeLabel" destination="l0g-gr-edG" id="Ud9-co-hlU"/>
+                        <outlet property="titleLabel" destination="eon-zg-1ll" id="cT9-Ex-PB3"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="641"/>
+            <point key="canvasLocation" x="478" y="740"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Safetant_WatchKit_App" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Safetant_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Title" numberOfLines="0" id="Cf9-wJ-gxR">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" text="Time" id="FhW-8t-CCB">
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <map height="100" alignment="center" verticalAlignment="bottom" id="qSX-86-HMe"/>
+                    </items>
+                    <connections>
+                        <outlet property="locationMap" destination="qSX-86-HMe" id="Agv-fK-ne9"/>
+                        <outlet property="timeLabel" destination="FhW-8t-CCB" id="m58-Tb-tBy"/>
+                        <outlet property="titleLabel" destination="Cf9-wJ-gxR" id="ROv-gg-YJ0"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="468" y="345"/>
         </scene>
@@ -131,6 +189,7 @@
     <resources>
         <image name="bolt.car" catalog="system" width="128" height="94"/>
         <image name="car" catalog="system" width="128" height="94"/>
+        <image name="exclamationmark.triangle" catalog="system" width="128" height="111"/>
         <image name="eye" catalog="system" width="128" height="80"/>
         <image name="heart.fill" catalog="system" width="128" height="105"/>
         <namedColor name="AccentColor">
