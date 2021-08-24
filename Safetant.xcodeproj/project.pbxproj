@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3E65B3026D486CA00A2ED2F /* DrivingModeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E65B2F26D486CA00A2ED2F /* DrivingModeInterfaceController.swift */; };
 		ED2FF47126CDF0F1005C8D07 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2FF47026CDF0F1005C8D07 /* LoginViewModel.swift */; };
 		ED2FF47426CDF94C005C8D07 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2FF47326CDF94C005C8D07 /* NetworkMonitor.swift */; };
 		ED2FF47626CDF95C005C8D07 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2FF47526CDF95C005C8D07 /* NetworkService.swift */; };
@@ -21,7 +22,6 @@
 		EDC3D0F126CA1C8B00C932AF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC3D0EF26CA1C8B00C932AF /* Interface.storyboard */; };
 		EDC3D0F326CA1C8C00C932AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC3D0F226CA1C8C00C932AF /* Assets.xcassets */; };
 		EDC3D0FA26CA1C8C00C932AF /* Safetant WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EDC3D0F926CA1C8C00C932AF /* Safetant WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		EDC3D0FF26CA1C8C00C932AF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D0FE26CA1C8C00C932AF /* InterfaceController.swift */; };
 		EDC3D10126CA1C8C00C932AF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D10026CA1C8C00C932AF /* ExtensionDelegate.swift */; };
 		EDC3D10326CA1C8C00C932AF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D10226CA1C8C00C932AF /* NotificationController.swift */; };
 		EDC3D10526CA1C8C00C932AF /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D10426CA1C8C00C932AF /* ComplicationController.swift */; };
@@ -106,6 +106,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E3E65B2F26D486CA00A2ED2F /* DrivingModeInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrivingModeInterfaceController.swift; sourceTree = "<group>"; };
 		ED2FF47026CDF0F1005C8D07 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		ED2FF47326CDF94C005C8D07 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		ED2FF47526CDF95C005C8D07 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -127,7 +128,6 @@
 		EDC3D0F226CA1C8C00C932AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDC3D0F426CA1C8C00C932AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDC3D0F926CA1C8C00C932AF /* Safetant WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Safetant WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDC3D0FE26CA1C8C00C932AF /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		EDC3D10026CA1C8C00C932AF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		EDC3D10226CA1C8C00C932AF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		EDC3D10426CA1C8C00C932AF /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
@@ -276,8 +276,8 @@
 		EDC3D0FD26CA1C8C00C932AF /* Safetant WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				EDC3D0FE26CA1C8C00C932AF /* InterfaceController.swift */,
 				EDC3D10026CA1C8C00C932AF /* ExtensionDelegate.swift */,
+				E3E65B2F26D486CA00A2ED2F /* DrivingModeInterfaceController.swift */,
 				EDC3D10226CA1C8C00C932AF /* NotificationController.swift */,
 				EDC3D10426CA1C8C00C932AF /* ComplicationController.swift */,
 				EDC3D10626CA1C8D00C932AF /* Assets.xcassets */,
@@ -620,8 +620,8 @@
 			files = (
 				EDC3D10326CA1C8C00C932AF /* NotificationController.swift in Sources */,
 				EDC3D10526CA1C8C00C932AF /* ComplicationController.swift in Sources */,
+				E3E65B3026D486CA00A2ED2F /* DrivingModeInterfaceController.swift in Sources */,
 				EDC3D10126CA1C8C00C932AF /* ExtensionDelegate.swift in Sources */,
-				EDC3D0FF26CA1C8C00C932AF /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -825,7 +825,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
 			};
 			name = Debug;
 		};
@@ -848,7 +848,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
 			};
 			name = Release;
 		};
@@ -868,7 +868,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
 			};
 			name = Debug;
 		};
@@ -889,7 +889,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
 			};
 			name = Release;
 		};
