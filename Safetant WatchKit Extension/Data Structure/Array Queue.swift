@@ -45,4 +45,8 @@ public struct QueueArray<T>: Queue {
     public func getValues() -> [T] {
         return array
     }
+    
+    public mutating func resetValues() {
+        array.removeAll()
+    }
 }

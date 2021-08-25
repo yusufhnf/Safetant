@@ -47,7 +47,7 @@ class DrivingModeInterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         autorizeHealthKit()
         timerCalculation()
-        dummyTesting()
+//        dummyTesting()
     }
     
     override func willActivate() {
@@ -75,7 +75,7 @@ class DrivingModeInterfaceController: WKInterfaceController {
                 lastHR = sample.quantity.doubleValue(for: heartRateQuantity)
             }
         }
-        checkHeartRate(lastHeartRate: self.lastHR)
+//        checkHeartRate(lastMeanHR: self.lastHR)
         
         healthRateQueueLogic(hr: self.lastHR)
     }
@@ -133,12 +133,12 @@ class DrivingModeInterfaceController: WKInterfaceController {
         }
     }
     
-    func checkHeartRate(lastHeartRate: Double) {
+    func checkHeartRate(lastMeanHR: Double) {
         let drivingTreshold = 109.3 / 100
         let drowsyTreshold = 93.0 / 100
         
         if initialHR == 0 {
-            initialHR = lastHeartRate
+            initialHR = lastMeanHR
             drivingHR = drivingTreshold * initialHR
             drowsyHR = drowsyTreshold * drivingHR
             print("drowsyHR \(drowsyHR)")
@@ -147,13 +147,12 @@ class DrivingModeInterfaceController: WKInterfaceController {
 
         }
         
-        if lastHeartRate >= drivingHR  {
+        if lastMeanHR >= drivingHR  {
             isPassDrivingHR = true
         }
         
-        if (lastHeartRate < drowsyHR) && isPassDrivingHR {
-            print("Bangun bangun")
-            WKInterfaceDevice.current().play(.notification)
+        if (lastMeanHR < drowsyHR) && isPassDrivingHR {
+            timerVibrate()
             isDowny = true
         }
         updateUi()
@@ -176,16 +175,18 @@ class DrivingModeInterfaceController: WKInterfaceController {
     }
     
     func healthRateQueueLogic(hr: Double) {
-        
+//        let queueSize = 0
         heartRateQueue.enqueue(hr)
-        if (heartRateQueue.getLength()) > 10 {
-            heartRateQueue.dequeue()
-        }
+//        if (heartRateQueue.getLength()) > queueSize != 0 {
+//            heartRateQueue.dequeue()
+//        }
     }
     
     func timerCalculation() {
         
-        Timer.scheduledTimer(withTimeInterval: 10.0, repeats: true) { timer in
+        let timerInterval = 15.0
+        
+        Timer.scheduledTimer(withTimeInterval: timerInterval, repeats: true) { timer in
             timer.tolerance = 0.2
             
             if self.isStop {
@@ -194,7 +195,27 @@ class DrivingModeInterfaceController: WKInterfaceController {
             }
             
             let avg = self.calcAvgerageHR(self.heartRateQueue.getValues())
+            self.checkHeartRate(lastMeanHR: avg)
+            self.heartRateQueue.resetValues()
             print(avg)
+        }
+    }
+    
+    func timerVibrate() {
+        
+        var timerCounter = 0
+        
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+            timer.tolerance = 0.2
+            timerCounter += 1
+            
+            print("Bangun bangun", timerCounter)
+            WKInterfaceDevice.current().play(.notification)
+                        
+            if timerCounter == 10 || !self.isDowny {
+                print("Timer stopped")
+                timer.invalidate()
+            }
         }
     }
     
@@ -202,14 +223,14 @@ class DrivingModeInterfaceController: WKInterfaceController {
         
         var timerCounter = 0
         
-        Timer.scheduledTimer(withTimeInterval: 2.0, repeats: true) { timer in
+        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
             timer.tolerance = 0.2
             timerCounter += 1
             
-            self.healthRateQueueLogic(hr: Double.random(in: 75.0 ..< 100.0))
+            self.healthRateQueueLogic(hr: Double.random(in: 75.0 ..< 200.0))
             print(self.heartRateQueue.getValues())
                         
-            if timerCounter == 30 {
+            if timerCounter == 50 {
                 print("Timer stopped")
                 timer.invalidate()
             }
