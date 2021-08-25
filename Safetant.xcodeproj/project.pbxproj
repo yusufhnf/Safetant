@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0376FF6D26D50457003659D0 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0376FF6C26D50457003659D0 /* HealthKit.framework */; };
+		E342858426D5F16F0038C0EC /* Array Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342858326D5F16F0038C0EC /* Array Queue.swift */; };
 		E3E65B3026D486CA00A2ED2F /* DrivingModeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E65B2F26D486CA00A2ED2F /* DrivingModeInterfaceController.swift */; };
 		ED2FF47126CDF0F1005C8D07 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2FF47026CDF0F1005C8D07 /* LoginViewModel.swift */; };
 		ED2FF47426CDF94C005C8D07 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2FF47326CDF94C005C8D07 /* NetworkMonitor.swift */; };
@@ -109,6 +110,7 @@
 /* Begin PBXFileReference section */
 		0376FF6A26D50282003659D0 /* Safetant WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Safetant WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		0376FF6C26D50457003659D0 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.4.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		E342858326D5F16F0038C0EC /* Array Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array Queue.swift"; sourceTree = "<group>"; };
 		E3E65B2F26D486CA00A2ED2F /* DrivingModeInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrivingModeInterfaceController.swift; sourceTree = "<group>"; };
 		ED2FF47026CDF0F1005C8D07 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		ED2FF47326CDF94C005C8D07 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
@@ -205,6 +207,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E377BDBA26D5E32100C3B460 /* Data Structure */ = {
+			isa = PBXGroup;
+			children = (
+				E342858326D5F16F0038C0EC /* Array Queue.swift */,
+			);
+			path = "Data Structure";
+			sourceTree = "<group>";
+		};
 		ED2FF47226CDF938005C8D07 /* Networks */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +299,7 @@
 		EDC3D0FD26CA1C8C00C932AF /* Safetant WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E377BDBA26D5E32100C3B460 /* Data Structure */,
 				0376FF6A26D50282003659D0 /* Safetant WatchKit Extension.entitlements */,
 				EDC3D10026CA1C8C00C932AF /* ExtensionDelegate.swift */,
 				E3E65B2F26D486CA00A2ED2F /* DrivingModeInterfaceController.swift */,
@@ -633,6 +644,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDC3D10326CA1C8C00C932AF /* NotificationController.swift in Sources */,
+				E342858426D5F16F0038C0EC /* Array Queue.swift in Sources */,
 				EDC3D10526CA1C8C00C932AF /* ComplicationController.swift in Sources */,
 				E3E65B3026D486CA00A2ED2F /* DrivingModeInterfaceController.swift in Sources */,
 				EDC3D10126CA1C8C00C932AF /* ExtensionDelegate.swift in Sources */,
@@ -875,7 +887,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 846H8ZXGL8;
+				DEVELOPMENT_TEAM = W6G4D3TTW6;
 				IBSC_MODULE = Safetant_WatchKit_Extension;
 				INFOPLIST_FILE = "Safetant WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = MeetUcup.Safetant.watchkitapp;
@@ -895,7 +907,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 846H8ZXGL8;
+				DEVELOPMENT_TEAM = W6G4D3TTW6;
 				IBSC_MODULE = Safetant_WatchKit_Extension;
 				INFOPLIST_FILE = "Safetant WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = MeetUcup.Safetant.watchkitapp;
@@ -915,7 +927,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 846H8ZXGL8;
+				DEVELOPMENT_TEAM = W6G4D3TTW6;
 				INFOPLIST_FILE = Safetant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -936,7 +948,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 846H8ZXGL8;
+				DEVELOPMENT_TEAM = W6G4D3TTW6;
 				INFOPLIST_FILE = Safetant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (

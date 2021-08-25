@@ -28,9 +28,10 @@ class DrivingModeInterfaceController: WKInterfaceController {
     
     private var isDowny = false
     private var isPassDrivingHR = false
-    private var heartRateQuery : HKQuery?
+    private var isStop = false
+    private var heartRateQuery: HKQuery?
     
-    
+    private var heartRateQueue = QueueArray<Double>()
     
     @IBAction func actionPressed() {
         if isDowny {
@@ -39,11 +40,14 @@ class DrivingModeInterfaceController: WKInterfaceController {
             updateUi()
         }else{
             pop()
+            isStop = true
         }
     }
     
     override func awake(withContext context: Any?) {
         autorizeHealthKit()
+        timerCalculation()
+        dummyTesting()
     }
     
     override func willActivate() {
@@ -72,6 +76,8 @@ class DrivingModeInterfaceController: WKInterfaceController {
             }
         }
         checkHeartRate(lastHeartRate: self.lastHR)
+        
+        healthRateQueueLogic(hr: self.lastHR)
     }
 
     
@@ -110,6 +116,7 @@ class DrivingModeInterfaceController: WKInterfaceController {
     }
     
     func updateUi(){
+        
         if self.isDowny {
             drivingIcon.setImage(UIImage(systemName: "eye"))
             heartRateIcon.setHidden(true)
@@ -150,7 +157,63 @@ class DrivingModeInterfaceController: WKInterfaceController {
             isDowny = true
         }
         updateUi()
-
+    }
+    
+    func calcAvgerageHR(_ data: [Double]) -> Double {
+        
+        var average = 0.0
+        if data.count == 0 {
+            return average
+        }
+        else {
+            var sum = 0.0
+            for number in data {
+                sum += number
+            }
+            average = sum / Double(data.count)
+        }
+        return average
+    }
+    
+    func healthRateQueueLogic(hr: Double) {
+        
+        heartRateQueue.enqueue(hr)
+        if (heartRateQueue.getLength()) > 10 {
+            heartRateQueue.dequeue()
+        }
+    }
+    
+    func timerCalculation() {
+        
+        Timer.scheduledTimer(withTimeInterval: 10.0, repeats: true) { timer in
+            timer.tolerance = 0.2
+            
+            if self.isStop {
+                print("Timer stopped")
+                timer.invalidate()
+            }
+            
+            let avg = self.calcAvgerageHR(self.heartRateQueue.getValues())
+            print(avg)
+        }
+    }
+    
+    func dummyTesting() {
+        
+        var timerCounter = 0
+        
+        Timer.scheduledTimer(withTimeInterval: 2.0, repeats: true) { timer in
+            timer.tolerance = 0.2
+            timerCounter += 1
+            
+            self.healthRateQueueLogic(hr: Double.random(in: 75.0 ..< 100.0))
+            print(self.heartRateQueue.getValues())
+                        
+            if timerCounter == 30 {
+                print("Timer stopped")
+                timer.invalidate()
+            }
+        }
     }
     
 }
