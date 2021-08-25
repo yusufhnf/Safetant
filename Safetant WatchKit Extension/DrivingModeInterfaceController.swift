@@ -14,11 +14,10 @@ class DrivingModeInterfaceController: WKInterfaceController {
     
     private var healthStore = HKHealthStore()
     let heartRateQuantity = HKUnit(from: "count/min")
-    private var value = 0
     private var initialHR = 0.0
     private var drivingHR = 0.0
     private var drowsyHR = 0.0
-//    private var isSleepy = false
+    private var lastHR = 0.0
     
     var delegate: HKWorkoutSessionDelegate!
     
@@ -27,25 +26,32 @@ class DrivingModeInterfaceController: WKInterfaceController {
     @IBOutlet weak var heartRateLabel: WKInterfaceLabel!
     @IBOutlet weak var actionButton: WKInterfaceButton!
     
+    private var isDowny = false
+    private var isPassDrivingHR = false
+    private var heartRateQuery : HKQuery?
+    
+    
     
     @IBAction func actionPressed() {
-        configure(isSleepy: false)
+        if isDowny {
+            isDowny = false
+            isPassDrivingHR = false
+            updateUi()
+        }else{
+            pop()
+        }
     }
     
     override func awake(withContext context: Any?) {
-        // Configure interface objects here.
-        
         autorizeHealthKit()
-        startHeartRateQuery(quantityTypeIdentifier: .heartRate)
-//        configure(isSleepy: true)
     }
     
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
+        startHeartRateQuery(quantityTypeIdentifier: .heartRate)
     }
     
     override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
+        stopHeartRateQuery()
     }
     
     func autorizeHealthKit() {
@@ -58,22 +64,16 @@ class DrivingModeInterfaceController: WKInterfaceController {
     }
     
     private func process(_ samples: [HKQuantitySample], type: HKQuantityTypeIdentifier) {
-        // variable initialization
-        var lastHeartRate = 0.0
-        
+    
         // cycle and value assignment
         for sample in samples {
             if type == .heartRate {
-                lastHeartRate = sample.quantity.doubleValue(for: heartRateQuantity)
+                lastHR = sample.quantity.doubleValue(for: heartRateQuantity)
             }
-            
-            self.value = Int(lastHeartRate)
-            print(lastHeartRate)
-            heartRateLabel.setText("\(self.value) Bpm")
-            
-            checkHeartRate(lastHeartRate: lastHeartRate)
         }
+        checkHeartRate(lastHeartRate: self.lastHR)
     }
+
     
     private func startHeartRateQuery(quantityTypeIdentifier: HKQuantityTypeIdentifier) {
         
@@ -88,9 +88,7 @@ class DrivingModeInterfaceController: WKInterfaceController {
             guard let samples = samples as? [HKQuantitySample] else {
                 return
             }
-            
             self.process(samples, type: quantityTypeIdentifier)
-            
         }
         
         // It provides us with both the ability to receive a snapshot of data, and then on subsequent calls, a snapshot of what has changed.
@@ -98,12 +96,21 @@ class DrivingModeInterfaceController: WKInterfaceController {
         
         query.updateHandler = updateHandler
         
+        self.heartRateQuery = query
+        
         // query execution
         healthStore.execute(query)
     }
     
-    func configure(isSleepy: Bool){
-        if isSleepy {
+    func stopHeartRateQuery() {
+        
+        if let query  = self.heartRateQuery {
+            healthStore.stop(query)
+        }
+    }
+    
+    func updateUi(){
+        if self.isDowny {
             drivingIcon.setImage(UIImage(systemName: "eye"))
             heartRateIcon.setHidden(true)
             heartRateLabel.setText("Wake Up!")
@@ -113,7 +120,7 @@ class DrivingModeInterfaceController: WKInterfaceController {
         else {
             drivingIcon.setImage(UIImage(systemName: "car"))
             heartRateIcon.setHidden(false)
-            heartRateLabel.setText("\(value)Bpm")
+            heartRateLabel.setText("\(Int(lastHR))Bpm")
             heartRateLabel.setTextColor(.white)
             actionButton.setTitle("Exit Driving Mode")
         }
@@ -121,17 +128,29 @@ class DrivingModeInterfaceController: WKInterfaceController {
     
     func checkHeartRate(lastHeartRate: Double) {
         let drivingTreshold = 109.3 / 100
-        let drowsyTreshold = 107.0 / 100
+        let drowsyTreshold = 93.0 / 100
         
-        if lastHeartRate < drowsyHR {
-            print("Bangun bangun")
-            configure(isSleepy: true)
-        }
         if initialHR == 0 {
             initialHR = lastHeartRate
             drivingHR = drivingTreshold * initialHR
-            drowsyHR = drowsyTreshold * initialHR
+            drowsyHR = drowsyTreshold * drivingHR
+            print("drowsyHR \(drowsyHR)")
+            print("initialHR \(initialHR)")
+            print("drivingHR \(drivingHR)")
+
         }
+        
+        if lastHeartRate >= drivingHR  {
+            isPassDrivingHR = true
+        }
+        
+        if (lastHeartRate < drowsyHR) && isPassDrivingHR {
+            print("Bangun bangun")
+            WKInterfaceDevice.current().play(.notification)
+            isDowny = true
+        }
+        updateUi()
+
     }
     
 }
