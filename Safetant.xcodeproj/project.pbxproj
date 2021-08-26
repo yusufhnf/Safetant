@@ -111,6 +111,7 @@
 		0376FF6A26D50282003659D0 /* Safetant WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Safetant WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		0376FF6C26D50457003659D0 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.4.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		E342858326D5F16F0038C0EC /* Array Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array Queue.swift"; sourceTree = "<group>"; };
+		E35F7AF126D73DB3007C73B9 /* Safetant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Safetant.entitlements; sourceTree = "<group>"; };
 		E3E65B2F26D486CA00A2ED2F /* DrivingModeInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrivingModeInterfaceController.swift; sourceTree = "<group>"; };
 		ED2FF47026CDF0F1005C8D07 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		ED2FF47326CDF94C005C8D07 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
@@ -256,6 +257,7 @@
 		EDC3D0C226CA1C8A00C932AF /* Safetant */ = {
 			isa = PBXGroup;
 			children = (
+				E35F7AF126D73DB3007C73B9 /* Safetant.entitlements */,
 				ED2FF47226CDF938005C8D07 /* Networks */,
 				EDC92B8526CCC244008DD2BA /* Base */,
 				EDC92B8426CCC22F008DD2BA /* ViewModels */,
@@ -839,14 +841,15 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Safetant WatchKit Extension/Safetant WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 846H8ZXGL8;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = W6G4D3TTW6;
 				INFOPLIST_FILE = "Safetant WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MeetUcup.Safetant.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bryankhufa.Safetant.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -862,14 +865,15 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Safetant WatchKit Extension/Safetant WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 846H8ZXGL8;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = W6G4D3TTW6;
 				INFOPLIST_FILE = "Safetant WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MeetUcup.Safetant.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bryankhufa.Safetant.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -887,10 +891,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = W6G4D3TTW6;
 				IBSC_MODULE = Safetant_WatchKit_Extension;
 				INFOPLIST_FILE = "Safetant WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = MeetUcup.Safetant.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bryankhufa.Safetant.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -907,10 +912,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = W6G4D3TTW6;
 				IBSC_MODULE = Safetant_WatchKit_Extension;
 				INFOPLIST_FILE = "Safetant WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = MeetUcup.Safetant.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bryankhufa.Safetant.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -926,7 +932,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Safetant/Safetant.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = W6G4D3TTW6;
 				INFOPLIST_FILE = Safetant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
@@ -934,7 +942,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MeetUcup.Safetant;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bryankhufa.Safetant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -947,7 +955,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Safetant/Safetant.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = W6G4D3TTW6;
 				INFOPLIST_FILE = Safetant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
@@ -955,7 +965,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MeetUcup.Safetant;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bryankhufa.Safetant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -970,7 +980,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 846H8ZXGL8;
+				DEVELOPMENT_TEAM = W6G4D3TTW6;
 				INFOPLIST_FILE = SafetantTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -993,7 +1003,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 846H8ZXGL8;
+				DEVELOPMENT_TEAM = W6G4D3TTW6;
 				INFOPLIST_FILE = SafetantTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1016,7 +1026,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 846H8ZXGL8;
+				DEVELOPMENT_TEAM = W6G4D3TTW6;
 				INFOPLIST_FILE = SafetantUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1038,7 +1048,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 846H8ZXGL8;
+				DEVELOPMENT_TEAM = W6G4D3TTW6;
 				INFOPLIST_FILE = SafetantUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1062,7 +1072,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 846H8ZXGL8;
+				DEVELOPMENT_TEAM = W6G4D3TTW6;
 				INFOPLIST_FILE = "Safetant WatchKit AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1085,7 +1095,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 846H8ZXGL8;
+				DEVELOPMENT_TEAM = W6G4D3TTW6;
 				INFOPLIST_FILE = "Safetant WatchKit AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1107,7 +1117,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 846H8ZXGL8;
+				DEVELOPMENT_TEAM = W6G4D3TTW6;
 				INFOPLIST_FILE = "Safetant WatchKit AppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1128,7 +1138,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 846H8ZXGL8;
+				DEVELOPMENT_TEAM = W6G4D3TTW6;
 				INFOPLIST_FILE = "Safetant WatchKit AppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

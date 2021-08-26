@@ -236,5 +236,4 @@ class DrivingModeInterfaceController: WKInterfaceController {
             }
         }
     }
-    
 }

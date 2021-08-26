@@ -2,12 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSHealthUpdateUsageDescription</key>
-	<string>heart rate detection</string>
-	<key>NSHealthShareUsageDescription</key>
-	<string>heart rate detection</string>
-	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
-	<string>heart rate detetction</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
@@ -25,7 +19,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>CLKComplicationPrincipalClass</key>
 	<string>$(PRODUCT_MODULE_NAME).ComplicationController</string>
 	<key>NSExtension</key>
@@ -33,11 +27,17 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>WKAppBundleIdentifier</key>
-			<string>MeetUcup.Safetant.watchkitapp</string>
+			<string>com.bryankhufa.Safetant.watchkitapp</string>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
 	</dict>
+	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
+	<string>We need to get the heart rate data because our app is detecting how drowsy the user is by calculating if the heart rate goes lower a certain treshold</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>We need to get the heart rate data because our app is detecting how drowsy the user is by calculating if the heart rate goes lower a certain treshold</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>We need to get the heart rate data because our app is detecting how drowsy the user is by calculating if the heart rate goes lower a certain treshold</string>
 	<key>WKExtensionDelegateClassName</key>
 	<string>$(PRODUCT_MODULE_NAME).ExtensionDelegate</string>
 	<key>WKRunsIndependentlyOfCompanionApp</key>
