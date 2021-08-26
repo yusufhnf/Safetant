@@ -1,8 +1,8 @@
 //
 //  ExtensionDelegate.swift
-//  Safetant WatchKit Extension
+//  FallDetectorTestHelper WatchKit Extension
 //
-//  Created by Yusuf Umar Hanafi on 16/08/21.
+//  Created by Galang Aji Susanto on 25/08/21.
 //
 
 import WatchKit
@@ -10,15 +10,15 @@ import HealthKit
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
     
-
     private let store = HKHealthStore()
-    private let falls = HKObjectType.quantityType(forIdentifier: .numberOfTimesFallen)!
-    private var lastAnchor: HKQueryAnchor?
-    
+        private let falls = HKObjectType.quantityType(forIdentifier: .numberOfTimesFallen)!
+        
+
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
-        requestPermissionToDetectFalls()
+        requestPermissionToWriteFalls()
+
     }
 
     func applicationDidBecomeActive() {
@@ -60,55 +60,20 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
         }
     }
     
-    private func requestPermissionToDetectFalls() {
-            store.requestAuthorization(toShare: nil, read: [falls]) { success, error in
-                print("Finished requesting authorization", success, error)
-                self.observeFalls()
-            }
+    
+    private func requestPermissionToWriteFalls() {
+        store.requestAuthorization(toShare: [falls], read: nil) { success, error in
+            print("Finished requesting authorization", success, error)
+            self.addAFall()
         }
-        
-        private func observeFalls() {
-            let query = HKObserverQuery(sampleType: falls, predicate: nil) { query, handler, error in
-                self.checkNewFalls()
-                handler()
-            }
-            store.execute(query)
+    }
+    
+    private func addAFall() {
+        let quantity = HKQuantity(unit: .count(), doubleValue: 1)
+        let sample = HKQuantitySample(type: falls, quantity: quantity, start: Date(), end: Date())
+        store.save(sample) { success, error in
+                print("Finished saving fall", success, error)
         }
-        
-        private func checkNewFalls() {
-            let query = HKAnchoredObjectQuery(type: falls, predicate: nil, anchor: lastAnchor, limit: HKObjectQueryNoLimit) { query, sample, deleted, anchor, error in
-                defer { self.lastAnchor = anchor }
-                guard self.lastAnchor != nil else { return }
-                guard sample?.isEmpty == false else { return }
-                self.presentFallAlert()
-            }
-            store.execute(query)
-        }
-        
-        private func presentFallAlert() {
-            DispatchQueue.main.async {
-                WKExtension.shared().rootInterfaceController?.presentController(withName: "Fall Detected", context:  WKExtension.shared().rootInterfaceController?.contentSafeAreaInsets)
-
-
-//                let okAction = WKAlertAction(title: "OK",
-//                                             style: WKAlertActionStyle.default) { () -> Void in
-//                    print("default tapped")
-//                       }
-//
-//                       let cancelAction = WKAlertAction(title: "Cancel",
-//                           style: WKAlertActionStyle.cancel) { () -> Void in
-//                        print("cancel tapped")
-//                       }
-//
-//                       let abortAction = WKAlertAction(title: "Abort",
-//                           style: WKAlertActionStyle.destructive) { () -> Void in
-//                        print("abort tapped")
-//                       }
-//                WKExtension.shared().rootInterfaceController?.presentAlert(withTitle: "Title", message: "message", preferredStyle: WKAlertControllerStyle.alert, actions: [okAction, cancelAction, abortAction])
-
-                
-            
-            }
-        }
+    }
 
 }

@@ -7,10 +7,10 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Driving Starter Interface Controller-->
         <scene sceneID="DQv-ub-I72">
             <objects>
-                <controller id="4HA-9U-h6H">
+                <controller id="4HA-9U-h6H" customClass="DrivingStarterInterfaceController" customModule="Safetant_WatchKit_Extension">
                     <items>
                         <group width="1" alignment="left" layout="vertical" id="b1B-ej-aP1">
                             <items>
@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="455" y="-89"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Fall Detected-->
         <scene sceneID="iEy-FG-GWd">
             <objects>
-                <controller id="gYd-GQ-JwW">
+                <controller identifier="Fall Detected" id="gYd-GQ-JwW">
                     <items>
                         <group width="1" alignment="left" layout="vertical" id="V3x-9y-w9Q">
                             <items>
